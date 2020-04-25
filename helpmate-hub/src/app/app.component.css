@@ -1,14 +1,5 @@
-.column {
+.content {
+  display: flex;
+  justify-content: space-between; 
   height: 100%;
-  background-size: contain;
-}
-
-.column-left {
-  width: 70%;
-  float: left;
-}
-
-.column-right {
-  width: 30%;
-  float: right;
 }
