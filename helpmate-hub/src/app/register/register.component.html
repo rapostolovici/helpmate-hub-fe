@@ -1,10 +1,13 @@
 <div class="row">
-  <div class="col-md-8">
+  <div class="col-md-8 map-container">
     <app-google-map-img></app-google-map-img>
   </div>
-  <div class="col-md-4">
-    <h4><a (click)="backToLogin()">Back to Login</a></h4>
-    <form class="text-center border border-light p-5" action="#!" style="margin-top: 100px;">
+  <div class="register-form-area">
+    <app-logo></app-logo>
+ 
+  <div class="col-md-4 register-form">
+   
+    <form class="text-center border border-light p-5" action="#!" >
   <hr>
   <input type="email" 
          id="defaultLoginFormEmail" 
@@ -26,9 +29,10 @@
          class="form-control mb-4 vertical-space" 
          placeholder="Confirm Password">
   
-  <button class="btn btn-info form-control vertical-space login-btn" (click)="navigateToFinalStep()">Next step</button>
+  <button class="btn btn-info form-control vertical-space register-btn" (click)="navigateToFinalStep()">Next step</button>
   <hr>
     </form>
-    <app-logo></app-logo> 
+    <h4><a (click)="backToLogin()">Back to Login</a></h4>
   </div>
+</div>
 </div>
