@@ -1,43 +1,62 @@
-<div class="row">
-  <div class="col-xs-12 col-md-8">Logo</div>
-  <div class="col-xs-6 col-md-4">
-    <h4>Welcome {{ user.lastName }}</h4>
-    <h5><a (click)="logout()">Logout</a></h5>
-  </div>
-</div>
+<div class="admin-page-container">
+  <div class="header-row">
+    <div class="col-xs-12 col-md-8 logo-container">
+      <img src="../../../assets/logos/logo-hm-small.png" class="img-setting">
+      <img src="../../../assets/logos/hand-logo-medium.jpg" class="img-setting">
+    </div>
 
-<div class="row">
-  <div class="col-xs-6">
-    <input type="text" class="form-control" placeholder="Search">
-    <button class="form-control btn btn-primary">Add User</button>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Email</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>John</td>
-          <td>Doe</td>
-          <td>john@example.com</td>
-        </tr>
-        <tr>
-          <td>Mary</td>
-          <td>Moe</td>
-          <td>mary@example.com</td>
-        </tr>
-        <tr>
-          <td>July</td>
-          <td>Dooley</td>
-          <td>july@example.com</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="col-xs-6 col-md-4 welcome-message">
+      <h4>Welcome {{ user.lastName }}</h4>
+      <h5><a (click)="logout()">Logout</a></h5>
+    </div>
   </div>
-  <div class="col-xs-6">
-    <app-google-map-img></app-google-map-img>
+
+  <div class="row">
+    <div class="col-xs-6 col-1">
+      <div class="search-section">
+        <input type="text" class="form-control search-input" placeholder="Search">
+        <button class="form-control btn btn-primary search-button">Add User</button>
+      </div>
+      <span style="width:30px"></span>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+          <tr>
+            <td>Jane</td>
+            <td>Doe</td>
+            <td>jane@example.com</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Smith</td>
+            <td>jsmith@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-xs-6">
+      <app-google-map-img></app-google-map-img>
+    </div>
   </div>
 </div>

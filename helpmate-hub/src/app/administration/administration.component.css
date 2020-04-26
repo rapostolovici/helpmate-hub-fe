@@ -1,0 +1,89 @@
+.row{
+    width: 100%;
+    display: block;
+}
+
+.admin-page-container{
+    display: block;
+    width: 100%;
+    height:100%;
+}
+
+.col-1{
+    width:50%;
+}
+
+thead{
+    text-align: left;
+}
+
+tr{
+    height: 53px;
+}
+
+.table > tbody > tr > td{
+    vertical-align: middle;
+}
+
+
+tbody{
+    text-align: left;
+}
+
+@media (orientation: landscape) {
+    .logo-container{
+        width:90%;
+        display: flex;
+    }
+    .header-row{
+        display: flex;
+        margin-bottom: 58px;
+    }
+    .welcome-message{
+        width: 10%;
+        display: block;
+        text-align: right;
+        margin-right: 10px;
+    }
+    .search-section{
+        margin-bottom: 30px;
+        width:95%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .table{
+        margin-top:30px;
+        max-width: 100%;
+        width:95%;
+        margin:50px auto 0 auto ;
+        text-align: center;
+    }
+    .search-button{
+        margin-top: 18px;
+        height: 40px;
+        font-weight: bolder;
+    }
+    .search-input{
+        height: 40px;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    .logo-container{
+        width:100%;
+        display: block;
+    }
+    .header-row{
+        display: block;
+        margin:auto;
+        width: 80%;
+    }
+    .welcome-message{
+        width: 10%;
+        display: block;
+        text-align: center;
+        /* margin-right: 10px; */
+    }
+    
+  }
