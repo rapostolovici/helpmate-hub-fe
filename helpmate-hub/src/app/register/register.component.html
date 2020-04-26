@@ -1,4 +1,9 @@
-<form class="text-center border border-light p-5" action="#!" style="margin-top: 100px;">
+<div class="row">
+  <div class="col-md-8">
+    <app-google-map-img></app-google-map-img>
+  </div>
+  <div class="col-md-4">
+    <form class="text-center border border-light p-5" action="#!" style="margin-top: 100px;">
   <hr>
   <input type="email" 
          id="defaultLoginFormEmail" 
@@ -22,4 +27,7 @@
   
   <button class="btn btn-info form-control vertical-space login-btn" (click)="navigateToFinalStep()">Next step</button>
   <hr>
-</form>
+    </form>
+    <app-logo></app-logo> 
+  </div>
+</div>
