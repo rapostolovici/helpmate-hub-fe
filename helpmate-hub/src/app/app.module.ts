@@ -9,11 +9,13 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { LogoComponent } from './logo/logo.component';
 import { from } from 'rxjs';
 import { RegisterComponent } from './register/register.component';
+import { RegisterStep2Component } from './register-step2/register-step2.component';
 
 const appRoutes: Routes = [
   { path: '', component: LoginPageComponent},
   { path: 'login', component: LoginPageComponent},
-  { path: 'register', component: RegisterComponent}
+  { path: 'register', component: RegisterComponent},
+  { path: 'register-final', component: RegisterStep2Component}
 ];
 
 
@@ -22,7 +24,8 @@ const appRoutes: Routes = [
     AppComponent,
     GoogleMapImgComponent,
     LoginPageComponent,
-    LogoComponent
+    LogoComponent,
+    RegisterStep2Component
   ],
   imports: [
     BrowserModule,
