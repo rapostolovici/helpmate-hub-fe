@@ -13,6 +13,10 @@
     width:50%;
 }
 
+.mouse-pointer {
+    cursor: pointer;
+}
+
 thead{
     text-align: left;
 }

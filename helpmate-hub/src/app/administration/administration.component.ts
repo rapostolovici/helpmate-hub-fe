@@ -11,6 +11,12 @@ export class AdministrationComponent implements OnInit {
 
   user: User;
 
+  users: User[] = [
+    new User('email', 'category', 'firstName', 'lastName', ''),
+    new User('email2', 'category', 'firstName', 'lastName', ''),
+    new User('email3', 'category', 'firstName', 'lastName', '')
+  ];
+
   constructor(private router: Router) {
     this.user = new User('admin@admin.com', 'admin', 'Admin', 'Admin', 'AdminF');
    }
@@ -21,6 +27,10 @@ export class AdministrationComponent implements OnInit {
 
   logout(): void {
     this.router.navigate(['/login']);
+  }
+
+  showDetails(): void {
+    this.router.navigate(['/user-description']);
   }
 
 }
