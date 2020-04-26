@@ -1,0 +1,38 @@
+.row{
+    display: flex;
+  } 
+  
+  .register-btn {
+    width: 200px;
+    height: 40px;
+  }
+  
+  .map-container{
+    width:66%;
+    margin-left:10px;
+  }
+
+  .register-form{
+    width:100%;
+    padding: 15px;
+  }
+  
+@media (orientation: landscape) {
+    .register-form-area{
+      width:33%;
+      margin-top: 80px;
+      margin-left:10px;
+      margin-right:15px;
+    }
+    
+  }
+  
+  @media (orientation: portrait) {
+    .register-form-area{
+      width:100%;
+      margin: 10px;
+    }
+    .map-container{
+      display: none;
+    }
+  }
