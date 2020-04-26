@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPageComponent implements OnInit {
 
+  infoMessage: string = "Hello Dany!";
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  clickMe(): void {
+    this.infoMessage = 'Hello There!';
   }
 
 }
