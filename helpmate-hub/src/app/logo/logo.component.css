@@ -1,5 +1,10 @@
 .logo {
   color: lightgreen;
-  margin-top: 300px;
-  margin-left: 50px;
+}
+
+.container{
+  margin:auto;
+  width:60%;
+  padding: 10px;
+  text-align: center;
 }

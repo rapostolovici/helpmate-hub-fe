@@ -2,3 +2,36 @@
   width: 200px;
   height: 40px;
 }
+.row{
+  display: flex;
+} 
+
+.map-container{
+  width:66%;
+  margin-left:10px;
+}
+
+.login-form{
+  width:100%;
+  padding: 15px;
+}
+
+@media (orientation: landscape) {
+  .login-form-area{
+    width:33%;
+    margin-top: 80px;
+    margin-left:10px;
+    margin-right:15px;
+  }
+  
+}
+
+@media (orientation: portrait) {
+  .login-form-area{
+    width:100%;
+    margin: 10px;
+  }
+  .map-container{
+    display: none;
+  }
+}
