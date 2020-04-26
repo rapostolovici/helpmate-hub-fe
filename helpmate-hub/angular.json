@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "helpmate-hub"
+    }
+  },
+  "defaultProject": "helpmate-hub",
+  "cli": {
+    "analytics": false
+  }
 }
