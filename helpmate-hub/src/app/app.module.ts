@@ -11,13 +11,15 @@ import { from } from 'rxjs';
 import { RegisterComponent } from './register/register.component';
 import { RegisterStep2Component } from './register-step2/register-step2.component';
 import { AdministrationComponent } from './administration/administration.component';
+import { UserDescriptionComponent } from './user-description/user-description.component';
 
 const appRoutes: Routes = [
   { path: '', component: LoginPageComponent},
   { path: 'login', component: LoginPageComponent},
   { path: 'register', component: RegisterComponent},
   { path: 'register-final', component: RegisterStep2Component},
-  { path: 'admin', component: AdministrationComponent}
+  { path: 'admin', component: AdministrationComponent},
+  { path: 'user-description', component: UserDescriptionComponent}
 ];
 
 
@@ -29,7 +31,8 @@ const appRoutes: Routes = [
     LogoComponent,
     RegisterComponent,
     RegisterStep2Component,
-    AdministrationComponent
+    AdministrationComponent,
+    UserDescriptionComponent
   ],
   imports: [
     BrowserModule,
