@@ -12,3 +12,12 @@ body {
 .vertical-space {
   margin-bottom: 30px;
 }
+
+input.form-control{
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.btn {
+  font-weight: bolder;
+}
