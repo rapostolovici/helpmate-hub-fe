@@ -29,10 +29,11 @@
          class="form-control mb-4 vertical-space" 
          placeholder="Confirm Password">
   
-  <button class="btn btn-info form-control vertical-space register-btn" (click)="navigateToFinalStep()">Next step</button>
+  <button class="btn btn-info form-control vertical-space register-btn" 
+          routerLink="/register-final">Next step</button>
   <hr>
     </form>
-    <h4><a (click)="backToLogin()">Back to Login</a></h4>
+    <h4><a routerLink="/login">Back to Login</a></h4>
   </div>
 </div>
 </div>
