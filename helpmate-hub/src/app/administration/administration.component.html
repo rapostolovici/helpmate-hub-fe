@@ -27,7 +27,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let user of users" routerLink="/user-description" class="mouse-pointer">
+          <tr *ngFor="let user of users" routerLink="/description/{{ user.id }}" class="mouse-pointer">
             <td>{{ user.lastName }}</td>
             <td>{{ user.category }}</td>
             <td>volunter</td>
