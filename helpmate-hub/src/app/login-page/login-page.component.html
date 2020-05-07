@@ -14,8 +14,8 @@
                             <input type="password" id="defaultLoginFormPassword"
                                    class="form-control mb-4 vertical-space" placeholder="Password">
 
-                            <button class="btn btn-info vertical-space login-btn" (click)="gotoView($event)">Sign
-                                   in</button>
+                            <button class="btn btn-info vertical-space login-btn" 
+                                   routerLink="/admin">Sign in</button>
                             <hr>
                             <a [routerLink]="['/register']">Register</a>
                      </form>

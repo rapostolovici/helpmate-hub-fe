@@ -7,7 +7,7 @@
 
     <div class="col-xs-6 col-md-4 welcome-message">
       <h4>Welcome {{ user.lastName }}</h4>
-      <h5><a (click)="logout()">Logout</a></h5>
+      <h5><a routerLink="/login">Logout</a></h5>
     </div>
   </div>
 
@@ -27,7 +27,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let user of users" (click)="showDetails()" class="mouse-pointer">
+          <tr *ngFor="let user of users" routerLink="/description/{{ user.id }}" class="mouse-pointer">
             <td>{{ user.lastName }}</td>
             <td>{{ user.category }}</td>
             <td>volunter</td>

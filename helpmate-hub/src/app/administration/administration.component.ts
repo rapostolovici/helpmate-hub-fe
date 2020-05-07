@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../user.model';
-import { Router } from '@angular/router';
+import { USERS } from '../mock-users';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-administration',
@@ -11,26 +12,20 @@ export class AdministrationComponent implements OnInit {
 
   user: User;
 
-  users: User[] = [
-    new User('email', 'category', 'firstName', 'lastName', ''),
-    new User('email2', 'category', 'firstName', 'lastName', ''),
-    new User('email3', 'category', 'firstName', 'lastName', '')
-  ];
+  users: User[] = [];
 
-  constructor(private router: Router) {
-    this.user = new User('admin@admin.com', 'admin', 'Admin', 'Admin', 'AdminF');
-   }
+  constructor(private userService:UserService) {}
 
   ngOnInit(): void {
-    
+    //TODO APC: fix the false user by adding new method in the service
+    this.user = new User(12, 'ee', 'admin', 'aaa', 'admin', 'admin');
+    this.getUsers();
   }
 
-  logout(): void {
-    this.router.navigate(['/login']);
-  }
-
-  showDetails(): void {
-    this.router.navigate(['/user-description']);
+  getUsers(): void {
+    this.userService.getUsers()
+      .subscribe(users => this.users = users);
+    ;
   }
 
 }
