@@ -5,6 +5,7 @@ import { RegisterComponent } from './register/register.component';
 import { RegisterStep2Component } from './register-step2/register-step2.component';
 import { AdministrationComponent } from './administration/administration.component';
 import { UserDescriptionComponent } from './user-description/user-description.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent},
   { path: 'register-final', component: RegisterStep2Component},
   { path: 'admin', component: AdministrationComponent},
-  { path: 'description/:id', component: UserDescriptionComponent}
+  { path: 'description/:id', component: UserDescriptionComponent},
+  { path: '**', component: PagenotfoundComponent }
 ];
 
 @NgModule({
