@@ -14,6 +14,8 @@ export class AdministrationComponent implements OnInit {
 
   users: User[] = [];
 
+  isUserSelected: boolean = false;
+
   constructor(private userService:UserService) {}
 
   ngOnInit(): void {
@@ -26,6 +28,14 @@ export class AdministrationComponent implements OnInit {
     this.userService.getUsers()
       .subscribe(users => this.users = users);
     ;
+  }
+
+  selectUser(): void {
+    if (this.isUserSelected) {
+      this.isUserSelected = false;
+    } else {
+      this.isUserSelected = true;
+    }
   }
 
 }

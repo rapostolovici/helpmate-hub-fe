@@ -13,7 +13,6 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent},
   { path: 'register-final', component: RegisterStep2Component},
   { path: 'admin', component: AdministrationComponent},
-  { path: 'description/:id', component: UserDescriptionComponent},
   { path: '**', component: PagenotfoundComponent }
 ];
 

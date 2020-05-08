@@ -18,7 +18,7 @@
         <button class="form-control btn btn-primary search-button">Add User</button>
       </div>
       <span style="width:30px"></span>
-      <table class="table">
+      <!-- <table class="table">
         <thead>
           <tr>
             <th>Firstname</th>
@@ -33,7 +33,23 @@
             <td>volunter</td>
           </tr>
         </tbody>
-      </table>
+      </table> -->
+      <div class="card" *ngFor="let user of users" class="mouse-pointer">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" 
+                    data-toggle="collapse" 
+                    data-target="#collapseOne" 
+                    aria-expanded="true" 
+                    aria-controls="collapseOne"
+                    (click)="selectUser()">
+              {{ user.lastName }} {{ user.category }} volunter
+            </button>
+          </h5>
+        </div>
+        <app-user-description [user]="user" [openUserDescription]="isUserSelected"></app-user-description>
+        </div>
+        
     </div>
     <div class="col-xs-6">
       <app-google-map-img></app-google-map-img>
